@@ -1,0 +1,35 @@
+<div class="contenedor">
+  <div class="row">
+    <div class="col">
+      <select
+        name="select"
+        class="sel"
+        [(ngModel)]="opcion"
+      >
+        <option value="ingreso" selected>+</option>
+        <option value="egreso">-</option>
+      </select>
+    </div>
+    <div class="col">
+      <input
+        type="text"
+        class="t_input"
+        [(ngModel)]="nombre"
+      />
+    </div>
+    <div class="col">
+      <input
+        type="number"
+        class="n_input"
+        [(ngModel)]="valor"
+      />
+    </div>
+    <div class="col">
+      <button
+        type="submit"
+        class="btn btn-success"
+        (click)="agregarItem()"
+      >Agregar</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <h3>EGRESOS</h3>
+  </div>
+  <div class="row eg" *ngFor="let egreso of egresos; let i = index">
+    <div class="col">
+      {{egreso.nombre}}
+    </div>
+    <div class="col">
+      ${{egreso.valor}}
+    </div>
+    <div class="col">
+      <button
+        class="btn btn-danger"
+        type="submit"
+        (click)="quitarEgreso(i)"
+      >
+        Quitar
+      </button>
+    </div>
+  </div>
+</div>
