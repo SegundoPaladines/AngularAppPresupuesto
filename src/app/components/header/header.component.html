@@ -6,16 +6,18 @@
       <p>Presupuesto Disponible:</p>
     </div>
     <div class="row">
-      <h1>${{presupuesto}}</h1>
+      <h1>{{presupuesto| currency:'COP':'$':'1.2-2'}}</h1>
     </div>
     <br />
     <div class="row blue">
       <div class="col tl">INGRESOS</div>
-      <div class="col tr">${{ingreso}}</div>
+      <div class="col tr">{{ingreso | currency:'COP':'$':'1.2-2'}}</div>
     </div>
     <div class="row red">
       <div class="col tl">EGRESOS</div>
-      <div class="col tr">${{egreso}}</div>
+      <div class="col tr percent">
+        {{egreso | currency:'COP':'$':'1.2-2'}} <porcentaje [valor]='egreso' />
+      </div>
     </div>
   </div>
 </div>

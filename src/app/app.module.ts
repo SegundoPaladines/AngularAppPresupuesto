@@ -8,6 +8,7 @@ import { IngresosComponet } from './components/ingresos/ingresos.component';
 import { EgresosComponent } from './components/egresos/egresos.component';
 import { FormsModule } from '@angular/forms';
 import { PresupuestoService } from './services/presupuesto.service';
+import { PorcentajeComponent } from './components/porcentaje/porcentaje.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PresupuestoService } from './services/presupuesto.service';
     HeaderComponent,
     FormularioComponent,
     IngresosComponet,
-    EgresosComponent
+    EgresosComponent,
+    PorcentajeComponent,
   ],
   imports: [
     BrowserModule,

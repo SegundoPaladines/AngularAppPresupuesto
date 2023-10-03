@@ -7,7 +7,7 @@
       {{ingreso.nombre}}
     </div>
     <div class="col">
-      ${{ingreso.valor}}
+      {{ingreso.valor | currency:'COP':'$':'1.2-2'}}
     </div>
     <div class="col">
       <button

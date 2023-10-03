@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 import { PresupuestoService } from "src/app/services/presupuesto.service";
 
 @Component(
