@@ -4,10 +4,12 @@
   </div>
   <div class="row eg" *ngFor="let egreso of egresos; let i = index">
     <div class="col">
-      {{egreso.nombre | currency:'COP':'$':'1.2-2'}}
+      {{egreso.nombre}}
     </div>
     <div class="col">
-      {{egreso.valor | currency:'COP':'$':'1.2-2'}}
+      <div class="percent">
+        {{egreso.valor | currency:'COP':'$':'1.2-2'}} <porcentaje class="porcentaje" [valor]="egreso.valor" />
+      </div>
     </div>
     <div class="col">
       <button
